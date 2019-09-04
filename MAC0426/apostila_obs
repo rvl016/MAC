@@ -1,0 +1,52 @@
+Estrutura de uma base de dados 
+   entende-se os tipos de dados, relacionamentos e restrições pertinentes aos
+   dados. Muitos modelos de dados também definem um conjunto de operações para especificar
+   como recuperar e modificar a base de dados.
+
+      Modelos de Dados Conceituais ou de Alto-Nível 
+         fornecem conceitos próximos à percepção dos usuários. 
+            Entidates (objeto)
+            Atributos
+            Relacionamentos
+      Modelos de Dados Físicos ou de Baixo-Nível 
+         fornecem conceitos que descrevem os detalhes de como os dados são armazenados no computador.
+
+Esquemas
+   de Base de dados
+      Base de dados tem um esquema (como um "metabase") - (base-esquema = Base-Intencional)
+         Representação
+            Diagrama
+Instâncias
+   de Base de dados (num determinado tempo) = Base-Extencional
+Arquitetura Three-Schema
+   nível interno -> esquema interno (estrutura de armazenamento físico)
+   nível conceitual -> esquema conceitual - descrição global da base de dados
+   nível externo/visão -> esquemas externos/visão de usuários
+   
+Independência
+   Lógica de Dados - altera esquema conceitual sem alterar 
+      esquema externo ou comprometer a representação dos dados
+   Física de dados - altera esquema interno sem alterar 
+      esquema conceitual ou comprometer a representação dos dados
+
+Modelo Entidade-Relacionamento (MER)
+   modelo de dados conceitual de alto nível - projetado para usufruto externo dos dados, sem
+      preocupação com a esquema interno.
+
+Entidade 
+   Algo real que possuí existência independente, no banco de dados, representado como objeto com atributos e
+      seus respectivos valores
+
+Atributos - Tipos
+   Simples/atômicos - atributos não divisíveis
+      Univalorados (eg. data de nascimento)
+      Multivalorados (eg. telefone - DDD + número)
+   Composto - atributos composto por atributos
+Atributos - Relações
+   Derivados - dois atributos que possuem mesmas informações (data de nascimento - idade)
+
+Valor Null
+   Não necessáriamente desconhecido, pode não se aplicar à determinadas entidades!
+ 
+      
+PG 24
